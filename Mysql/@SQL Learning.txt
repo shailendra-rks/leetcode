@@ -1,0 +1,23 @@
+Rank() Over(partition by <name> over <marks> DESC) <Ranks>
+
+100     1
+50      2
+50      2
+40      4
+
+DENSE_RANK() OVER(PARTITION BY <StudentName> ORDER BY <Marks> ) <Ranks>
+
+40      1
+50      2
+50      2
+100     3
+
+ROW_NUMBER() OVER(ORDER BY <marks> desc)
+
+LIMIT 1 OFFSET 1
+
+WITH <*alias> (<coulmnNames>) AS
+    ( your subquery goes here)
+SELECT *<coulmnName>
+FROM *<tableName>
+WHERE <codition>;
