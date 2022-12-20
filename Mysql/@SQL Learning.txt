@@ -15,6 +15,8 @@ DENSE_RANK() OVER(PARTITION BY <StudentName> ORDER BY <Marks> ) <Ranks>
 ROW_NUMBER() OVER(ORDER BY <marks> desc)
 
 LIMIT 1 OFFSET 1
+    or 
+LIMIT 5,1 /* where 5 is OFSET and 1 is LIMIT*/
 
 WITH <*alias> (<coulmnNames>) AS
     ( your subquery goes here)
