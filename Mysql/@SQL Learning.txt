@@ -23,3 +23,13 @@ WITH <*alias> (/<coulmnNames>) AS
 SELECT *<coulmnName>
 FROM *<tableName>
 WHERE <codition>;
+
+Lead(expr, /N, /default) OVER (Window_specification | Window_name)
+Lag(expr, N, default) OVER (Window_specification | Window_name)
+
+    + expr: It can be a column or any bulit-in function.
+    + N: It is a positive value which determine number of rows preceding/succeeding the current row. If it is omitted in query then its default value is 1.
+    + default: It is the default value return by function in-case no row precedes/succeedes the current row by N rows. If it is missing then it is by default NULL.
+
+    + Window_specification: It consist of query partition clause which determines how the query rows are partitioned and ordered.
+    + Window_name: If window is specified elsewhere in the query then it is referenced using this Window_name.
