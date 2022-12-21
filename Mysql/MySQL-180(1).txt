@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# 180. Consecutive Numbers
+# 180. Consecutive Numbers atleast 3 times
 SELECT DISTINCT x.num AS 'ConsecutiveNums'
 FROM Logs x,
      Logs y,
