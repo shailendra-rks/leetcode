@@ -1,11 +1,11 @@
-Rank() Over(partition by <name> over <marks> DESC) <Ranks>
+Rank() Over(/partition by <name> ORDER BY <marks> DESC) <Ranks>
 
 100     1
 50      2
 50      2
 40      4
 
-DENSE_RANK() OVER(PARTITION BY <StudentName> ORDER BY <Marks> ) <Ranks>
+DENSE_RANK() OVER(/PARTITION BY <StudentName> *ORDER BY <Marks> ) <Ranks>
 
 40      1
 50      2
@@ -18,7 +18,7 @@ LIMIT 1 OFFSET 1
     or 
 LIMIT 5,1 /* where 5 is OFSET and 1 is LIMIT*/
 
-WITH <*alias> (<coulmnNames>) AS
+WITH <*alias> (/<coulmnNames>) AS
     ( your subquery goes here)
 SELECT *<coulmnName>
 FROM *<tableName>
