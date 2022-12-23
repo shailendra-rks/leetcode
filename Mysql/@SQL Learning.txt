@@ -35,3 +35,12 @@ Lag(expr, N, default) OVER (Window_specification | Window_name)
     + Window_name: If window is specified elsewhere in the query then it is referenced using this Window_name.
 
 not equlas denoted by <> or !=
+
+... 
+WHERE <alias>
+NOT IN (subquery)
+
+...
+WHERE <alias> IS NULL
+
+OVER(PARTITION BY<>) is slower than GROUP BY <>
