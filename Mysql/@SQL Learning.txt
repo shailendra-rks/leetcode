@@ -33,3 +33,5 @@ Lag(expr, N, default) OVER (Window_specification | Window_name)
 
     + Window_specification: It consist of query partition clause which determines how the query rows are partitioned and ordered.
     + Window_name: If window is specified elsewhere in the query then it is referenced using this Window_name.
+
+not equlas denoted by <> or !=
