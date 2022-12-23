@@ -44,3 +44,13 @@ NOT IN (subquery)
 WHERE <alias> IS NULL
 
 OVER(PARTITION BY<>) is slower than GROUP BY <>
+
+Referencing master query table in subquery of where clause
+    SELECT *
+    FROM <table1> e1
+    WHERE
+        3 > (SELECT COUNT(DISTINCT e2.Salary)
+            FROM <table1> e2
+            WHERE
+            e2.Salary > e1.Salary
+            )
