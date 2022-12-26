@@ -54,3 +54,5 @@ Referencing master query table in subquery of where clause
             WHERE
             e2.Salary > e1.Salary
             )
+
+DATEDIFF(a,b) gives number of days between a and b [b-a]
