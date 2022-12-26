@@ -10,3 +10,4 @@ FROM Employee e
 WHERE 
     (e.salary, e.departmentId) IN
     (SELECT DISTINCT MAX(salary) as 'salary', departmentId FROM Employee GROUP BY departmentId)
+;

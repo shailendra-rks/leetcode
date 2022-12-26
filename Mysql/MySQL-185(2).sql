@@ -13,3 +13,4 @@ FROM
     ON e.departmentId = d.id) t
 WHERE 
     t.rank < 4
+;

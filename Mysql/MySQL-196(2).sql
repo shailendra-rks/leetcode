@@ -12,3 +12,4 @@ DELETE FROM Person
 WHERE id NOT IN(SELECT * FROM
     (SELECT min(id) as 'id' FROM Person t2 GROUP BY email) p
 )
+;

@@ -14,3 +14,4 @@ FROM Employee e
     ON e.id = t.id
 WHERE 
     t.rank < 4
+;

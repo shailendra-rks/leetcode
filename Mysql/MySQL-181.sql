@@ -5,3 +5,4 @@ FROM Employee emp
     JOIN Employee mgr 
 ON emp.managerId = mgr.id
     AND emp.salary > mgr.salary
+;

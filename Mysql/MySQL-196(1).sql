@@ -8,3 +8,4 @@ WHERE id IN
         ) t 
         WHERE dup > 1
     )
+;

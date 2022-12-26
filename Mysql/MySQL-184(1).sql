@@ -14,3 +14,4 @@ FROM Employee e
 WHERE 
     e.salary = max_sal.M_sal
     AND e.departmentId = max_sal.departmentId
+;
