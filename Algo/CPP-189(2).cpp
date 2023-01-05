@@ -1,21 +1,22 @@
 // 189. Rotate Array
-// O(N), O(n)
+// O(N)-time, O(n)-auxillary space
 
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
-        int ctr = 0;
+        int count = 0;
         vector<int> temp(nums.size());
-        int r = nums.size();
+        int size = nums.size();
         
-        k = k%(r);
-        for(int i = 0; i<r;i++,ctr++){
+        k = k%size;
+        for(int i = 0; i<size;i++){
             if(ctr < k){
-                temp[i] = nums[r-k+ctr];
+                temp[i] = nums[size-k+count];
             }
             else{
                 temp[i] = nums[i-k];
             }
+            count++;
         }
         nums = temp;
     }

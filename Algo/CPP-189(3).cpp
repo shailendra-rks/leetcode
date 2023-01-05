@@ -1,5 +1,5 @@
 // 189. Rotate Array
-// O(N), O(1)
+// O(N)-time, O(1)-auxillary space
 
 class Solution {
 public:
