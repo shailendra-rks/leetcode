@@ -1,3 +1,4 @@
 1. Two Sum
 198. House Robber
 967. Numbers With Same Consecutive Differences
+567. Permutation in String by merge sort
