@@ -1,4 +1,5 @@
-1. Two Sum
-198. House Robber
-967. Numbers With Same Consecutive Differences
-567. Permutation in String by merge sort
+198. House Robber(good question)
+542. Distance to zero in Matrix(top to bottom and bottom to top, using queue)
+567. Permutation in String (using map(array), merge sort)
+967. Numbers With Same Consecutive Differences(revisit)
+994. Rotting Oranges (Discuss with Di)
