@@ -1,5 +1,6 @@
 46. Permutations    :                       (discuss with Di and research more) *
 70. Climbing Stairs :                       (dp concept bottom to up)
+72. Edit Distance   :                       (Memoisation and tabulation in DP)
 77. Combinations    :                       (generic solution and smart solution due from 1 to n numbers) *
 120. Triangle       :                       (fp concept bottom to  up with O(n) space)
 191. Number of 1 Bits
